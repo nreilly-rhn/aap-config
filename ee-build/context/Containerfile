@@ -18,7 +18,6 @@ ARG PKGMGR=microdnf
 
 COPY _build/scripts/ /output/scripts/
 COPY _build/scripts/entrypoint /opt/builder/bin/entrypoint
-COPY collections/* /usr/share/ansible/collections/
 RUN /output/scripts/pip_install $PYCMD
 
 # Builder build stage
