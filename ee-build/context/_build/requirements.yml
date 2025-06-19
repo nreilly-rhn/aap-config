@@ -1,0 +1,11 @@
+collections:
+  - name: infra.aap_configuration
+    source: file:///home/nreilly/tmp/.ansible/test/collections/infra-aap_configuration-3.4.1.tar.gz
+  - name: ansible.platform
+    source: file:///home/nreilly/tmp/.ansible/test/collections/ansible-platform-2.5.20250604.tar.gz
+  - name: ansible.hub
+    source: file:///home/nreilly/tmp/.ansible/test/collections/ansible-hub-1.0.0.tar.gz
+  - name: ansible.controller
+    source: file:///home/nreilly/tmp/.ansible/test/collections/ansible-controller-4.6.14.tar.gz
+  - name: ansible.eda
+    source: file:///home/nreilly/tmp/.ansible/test/collections/ansible-eda-2.8.0.tar.gz
