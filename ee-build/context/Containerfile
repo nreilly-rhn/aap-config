@@ -46,7 +46,7 @@ ARG PKGMGR
 
 RUN /output/scripts/check_ansible $PYCMD
 COPY --from=builder /output/ /output/
-RUN /output/scripts/install-from-bindep && rm -rf /output/wheels
+RUN rm -rf /output/wheels
 RUN chmod ug+rw /etc/passwd
 RUN mkdir -p /runner && chgrp 0 /runner && chmod -R ug+rwx /runner
 WORKDIR /runner
