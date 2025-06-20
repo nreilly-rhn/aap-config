@@ -42,5 +42,5 @@ ERROR - Missing Ansible installation
 EOF
     exit 1
 fi
-
+cat /etc/ansible/ansible.cfg
 exit 0
