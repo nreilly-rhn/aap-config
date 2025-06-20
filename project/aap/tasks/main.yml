@@ -6,8 +6,8 @@
     scope: "write"
     state: present
     controller_host: "{{ aap_hostname }}"
-    aap_username: "{{ aap_username }}"
-    aap_password: "{{ aap_password }}"
+    controller_username: "{{ aap_username }}"
+    controller_password: "{{ aap_password }}"
   register: token
 - name: Show token
   ansible.builtin.debug:
