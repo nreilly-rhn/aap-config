@@ -12,3 +12,10 @@
 - name: Show token
   ansible.builtin.debug:
     msg: "{{ token }}"
+
+- name: Load manifest
+  infra.aap_configuration.controller_license:
+    controller_host: "{{ controller_hostname }}"
+    controller_username: "{{ controller_username }}"
+    controller_password: "{{ controller_password }}"
+    manifest_file: "files/aap-manifest.zip"
